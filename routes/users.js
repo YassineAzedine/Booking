@@ -5,7 +5,7 @@ const {
     userAuth,
     serializeUser,
     checkRole
-  } = require("../utils/Auth");
+  } = require("../controllers/Auth");
 //Users Registration Route
 router.post('/register-user', async(req,res)=>{
     await userRegister(req.body, "user", res);
